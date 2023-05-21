@@ -2,27 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porfolio - Samuel Nummela</title>
   <link rel="stylesheet" href="style.css">
+  <title>Samuel Nummela - Portfolio</title>
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="header">
-    <div class="header-left">
-      <a href="index.html">Samuel&nbsp;Nummela</a>
+  <!-- Header -->
+  <header>
+    <a href="index.html"><img src="logo.png" alt="" width="100px" height=""></a>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>  
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="social-media">
+        <a href="https://www.linkedin.com/in/samuelnummela/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="linkedin"></a>
+        <a href="https://www.github.com/saow" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png" alt="github"></a>
     </div>
-    <div class="header-right">
-      <div class="navbar-menu">
-        <a href="portfolio.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
+    <section id="home">
+        <h1 class="name">Samuel Nummela</h1>
+        <h2>Web Developer</h2>
+    </section>
+<hr>
+    <section id="about">
+        <h2>About me</h2>
+        Hi! I'm Samuel Nummela, a <b>web developer</b>
+    from Finland. I'm currently <b>studying web development</b> at
+    <a href="https://www.tredu.fi/" target="_blank">Tredu</a>.<br>
+    I'm passionate about learning new things and I'm always looking for new challenges.
+    </section>
+
+    <br><br><hr><br>
+    <h2 id="h2skills">Skills</h2>
+<section id="skills">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://tredu.github.io/html_css_materiaalit_2022.github.io/demos/d24_tech_stack/img/html5_logo.svg" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>HTML</h1> 
+      <p>I use HTML in practically every project I work on, so it has come close.</p> 
     </div>
   </div>
-<div class="presentation">
-  <h1>Welcome to my Portfolio</h1>
-  <p>Hello my name is <b>Samuel Nummela</b> and I'm Software developer student at Tredu</p>
 </div>
 
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://tredu.github.io/html_css_materiaalit_2022.github.io/demos/d24_tech_stack/img/css3_logo.svg" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>CSS</h1> 
+      <p>I use CSS in practically every project I work on, so it has come close.</p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://tredu.github.io/html_css_materiaalit_2022.github.io/demos/d24_tech_stack/img/jslogo.svg" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>JAVASCRIPT</h1> 
+      <p>Javascript is yet kinda new to me but i can do projects with it already.</p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Python</h1> 
+      <p>I have been using python to some of my projects it may be my favorite programming languange.</p> 
+    </div>
+  </div>
+</div>
+    </section>
+<br><br><hr>
+
+<section id="contact">
+    <h2>Contact me</h2>
+    <form action="https://formsubmit.co/851328f4d8e1eb482d2f500bc0dd78ea" method="POST"/>
+    <label for="">Full name</label><br>
+    <input type="text" name="fullname" placeholder="John Doe" require><br>
+    <label for="">Email</label><br>
+    <input type="email" name="email" placeholder="someone@example.com" require><br>
+    <label for="">Message</label><br>
+    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message..." require></textarea><br>
+    <input type="hidden" name="_autoresponse" value="Thanks for contacting me!">
+    <input type="submit" value="Send message">
+    </form>
+</section>
+
+  <footer>
+    <p>&copy; Copyright 2023 Samuel Nummela. All rights reserved.</p>
+  </footer>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
 </html>
