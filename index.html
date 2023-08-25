@@ -11,7 +11,7 @@
 <body>
   <!-- Header -->
   <header>
-    <a href="index.html"><img src="logo.png" alt="" width="100px" height=""></a>
+    <a href="index.html"><img src="logo.png" id="logo" alt="" width="100px" height="" ></a>
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>  
@@ -42,11 +42,6 @@
 
 <hr>
 
-<section id="resume">
-  <h2>Resume</h2>
-</section>
-
-<hr>
 <h2 id="h2skills">Skills</h2>
 <section id="skills">
 <div class="flip-card">
@@ -184,6 +179,10 @@
     <input type="submit" value="Send message">
     </form>
 </section>
+<div class="notification" id="sticky-notification">
+  <p class="noti">To switch between light and dark mode press ctrl + enter.</p>
+  <button id="close-button">Close</button>
+</div>
 
 <footer>
     <p>&copy; Copyright 2023 Samuel Nummela. All rights reserved.</p>
