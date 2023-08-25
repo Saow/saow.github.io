@@ -323,6 +323,14 @@ footer{
     flex-direction: column;
     gap: 60px;
 }
+.notification{
+  display: none;
+}
+.noti{
+  display: none;
+}
+#close-button{
+  display: none;
 }
 
 
@@ -388,3 +396,4 @@ body {
 .noti{
   color: black;
 }
+
