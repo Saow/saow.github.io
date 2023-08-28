@@ -200,6 +200,7 @@ hr{
     gap: 60px;
 }
 }
+
 footer{
     color: var(--text-color);
     padding: 20px;
@@ -323,6 +324,7 @@ footer{
     flex-direction: column;
     gap: 60px;
 }
+}
 
 
 #resume{
@@ -386,5 +388,17 @@ body {
 
 .noti{
   color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+.noti{
+  display: none;
+}
+.notification{
+  display: none;
+}
+#close-button{
+  display: none;
 }
 }
