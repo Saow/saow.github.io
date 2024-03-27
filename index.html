@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <title>Portfolio - Samuel Nummela</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
 </head>
 <body>
     
@@ -23,8 +27,12 @@
     <section class="presentation">
         <div class="">
             <div class="text">
-                <h1>Samuel Nummela</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <h1><b>Samuel Nummela</b></h1>
+                <p>
+                    I'm
+                    <span id="textswitch" data-typed-items="Fullstack developer, Web developer, Ui/Ux designer"></span>
+                </p>with a passion for creating beautiful and functional web apps.
+                </p>
             </div>
             <div class="image">
                 <img src="/svg/Coding-bro.svg" alt="image">
@@ -33,7 +41,7 @@
 
     <section class="tools" id="tools">
         <div>
-            <h2>Tools</h2>
+            <h2 class="tools_h2">Tools</h2>
             <div class="toolsgrid">
                 <div>
                     <i class="devicon-html5-plain"></i>
@@ -44,20 +52,20 @@
                     <p>CSS</p>
                 </div>
                 <div>
+                    <i class="devicon-javascript-plain"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div>
+                    <i class="devicon-react-original"></i>
+                    <p>React.js</p>
+                </div>
+                <div>
                     <i class="devicon-cypressio-plain"></i>
                     <p>Cypress</p>
                 </div>
                 <div>
-                    <i class="devicon-react-original"></i>
-                    <p>React</p>
-                </div>
-                <div>
                     <i class="devicon-tailwindcss-original"></i>
                     <p>Tailwind</p>
-                </div>
-                <div>
-                    <i class="devicon-javascript-plain"></i>
-                    <p>JavaScript</p>
                 </div>
                 <div>
                     <i class="devicon-mysql-original"></i>
@@ -67,7 +75,6 @@
                     <i class="devicon-nodejs-plain"></i>
                     <p>Node.js</p>
                 </div>
-                <!-- python -->
                 <div>
                     <i class="devicon-python-plain"></i>
                     <p>Python</p>
@@ -103,32 +110,37 @@
         </div>
     </section>
 
-<section class="projects">
-    <div class="projectsgrid" id="projects">
-        <h2>Projects</h2>
+    <section class="projects">
+        <div>
+        <h2 class="projects_h2">Projects</h2>
+        <div class="projectsgrid" id="projects">
             <div class="project">
-                <img src="png/Project1.svg" alt="project1">
-                <h3>Project 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <a href="https://saow.github.io/WeatherApp" alt="WeatherApp" title="https://saow.github.io/WeatherApp" target="_blank"><img src="projects_images/weatherapp.png" alt="WeatherApp"></a>
+                <div class="projectinfo">
+                <h3>WeatherApp</h3>
+                <p>This was my first JavaScript App</p>
+            </div>
             </div>
             <div class="project">
-                <img src="png/Project2.svg" alt="project2">
-                <h3>Project 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <a href="https://saow.github.io/GadolCar" alt="GadolCar" title="https::/saow.github.io/GadolCar" target="_blank"><img src="projects_images/blank.jpg" alt="GadolCar"></a>
+                <div class="projectinfo">
+                <h3>GadolCar</h3>
+                <p>This was my first react App</p>
+                </div>
             </div>
             <div class="project">
-                <img src="png/Project3.svg" alt="project3">
-                <h3>Project 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-            </div>
-            <div class="project">
-                <img src="png/Project4.svg" alt="project4">
-                <h3>Project 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <a href="https://saow.github.io/GadolCar" alt="GadolCar" title="https::/saow.github.io/GadolCar" target="_blank"><img src="projects_images/blank.jpg" alt="GadolCar"></a>
+                <div class="projectinfo">
+                <h3>GadolCar</h3>
+                <p>This was my first react App</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+
+
 
 
 </body>
