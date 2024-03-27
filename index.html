@@ -1,171 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Samuel Nummela - Portfolio</title>
-  <script defer src="script.js"></script>
-  <link rel="icon" href="logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Samuel Nummela</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <a href="index.html"><img src="logo.png" id="logo" alt="" width="100px" height="" ></a>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>  
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-    </ul>
-  </nav>
-</header>
+    
+    <header id="header">
+        <a href="/"><img src="logo.png" alt="logo"></a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="links">
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </div>
+    </header>
 
-<div class="social-media">
-        <a href="https://www.linkedin.com/in/samuelnummela/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="linkedin"></a>
-        <a href="https://www.github.com/saow" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png" alt="github"></a>
-    </div>
-    <section id="home">
-        <h1 class="name">Samuel Nummela</h1>
-        <h2>Software Developer</h2>
+    <section class="presentation">
+        <div class="">
+            <div class="text">
+                <h1>Samuel Nummela</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </div>
+            <div class="image">
+                <img src="/svg/Coding-bro.svg" alt="image">
+            </div>
     </section>
-<hr>
-    <section id="about">
-        <h2>About me</h2>
-        Hi! I'm Samuel Nummela, a <b>Student</b>
-    from Finland. I'm currently <b>studying software development</b> at
-    <a href="https://www.tredu.fi/" target="_blank">Tredu</a>.<br>
-    I'm passionate about learning new things and I'm always looking for new challenges.
-    </section>
-
-<hr>
-
-<h2 id="h2skills">Skills</h2>
-<section id="skills">
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://tredu.github.io/html_css_materiaalit_2022.github.io/demos/d24_tech_stack/img/html5_logo.svg" alt="Avatar" style="width:200px;height:200px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>HTML</h1> 
-      <p>I use html in practically every project I work on, so it has come close.</p> 
-    </div>
-  </div>
-</div>
-
-
-
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://tredu.github.io/html_css_materiaalit_2022.github.io/demos/d24_tech_stack/img/css3_logo.svg" alt="Avatar" style="width:200px;height:200px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>CSS</h1> 
-      <p>I use css in practically every project I work on, so it has come close.</p> 
-    </div>
-  </div>
-</div>
-
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://tredu.github.io/html_css_materiaalit_2022.github.io/demos/d24_tech_stack/img/jslogo.svg" alt="Avatar" style="width:200px;height:200px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>JAVASCRIPT</h1> 
-      <p>Javascript is yet kinda new to me but i can do some projects with it already.</p> 
-    </div>
-  </div>
-</div>
-
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Avatar" style="width:200px;height:200px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>PYTHON</h1> 
-      <p>I have been using python to some of my projects it may be my favorite programming languange.</p> 
-    </div>
-  </div>
-</div>
-
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://tredu.github.io/html_css_materiaalit_2022.github.io/demos/d24_tech_stack/img/php_logo.svg" alt="Avatar" style="width:200px;margin-top:50px;height:200px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>PHP</h1> 
-      <p>I use PHP very much on my projects that I work on, so it has come close.</p> 
-    </div>
-  </div>
-</div>
-
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://www.percona.com/blog/wp-content/uploads/2015/01/MySQL-query-cache.png" alt="Avatar" style="width:200px;height:200px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>MYSQL</h1> 
-      <p>I use mysql a lot with php when i need to take some stuff from database.</p> 
-    </div>
-  </div>
-</div>
-
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/2101px-Adobe_XD_CC_icon.svg.png" alt="Avatar" style="width:200px;height:200px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>ADOBE XD</h1> 
-      <p>I use adobe xd a lot to get an illustration of what I'm doing and have been using to make some ui/ux.</p> 
-    </div>
-  </div>
-    </section>
-<hr>
-
-
-<h2 id="projectsh2">Projects</h2>
-<section id="projects">
-<div class="project1">
-  <h3>Weather App</h3>
- <a href="https://github.com/Saow/WeatherApp" target="_blank"><img src="https://i.ibb.co/qjz7nws/Nimet-n.png"></a>
-</div>
-
-<div class="project2">
-  <h3>Music player</h3>
-  <a href="https://github.com/Saow/music-player" target="_blank"><img src="img/musicplayer.png" alt=""></a>
-</div>
-<div class="project3">
-  <h3>Loginform</h3>
-  <a href="https://github.com/Saow/loginform" target="_blank"><img src="img/loginformimg.jpg" alt=""></a>
-</div>
-<div class="project4">
-  <h3>Python Password Generator</h3>
-  <a href="https://github.com/Saow/Password_generator" target="_blank"><img src="img/password.png" alt=""></a>
-</div>
-<div class="project5">
-  <h3>Python qrcode Generator</h3>
-  <a href="https://github.com/Saow/python-qr-code-generator-" target="_blank"><img src="img/qrcode.png" alt=""></a>
-</div>
-<div class="project6">
-  <h3>School work php events app</h3>
-  <a href="https://github.com/Saow/tapahtumat/tree/main" target="_blank"><img src="img/tapahtumat.png" alt=""></a>
-</div>
-
-
-
-</section>
-
-
-<footer>
-    <p>&copy; Copyright 2023 Samuel Nummela. All rights reserved.</p>
-  </footer>
 </body>
 </html>
