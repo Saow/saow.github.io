@@ -20,14 +20,14 @@ import svg2 from "../public/linkedin.svg";
 import svg3 from "../public/email.svg";
 
 export default function App() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [projects, setProjects] = useState([]); // State to store projects
-  const [isPopoverVisible, setIsPopoverVisible] = useState(false); // State to control popover visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [projects, setProjects] = useState([]);
+  const [isPopoverVisible, setIsPopoverVisible] = useState(false);
   const [popoverMessage, setPopoverMessage] = useState("");
   const menuItems = ["Profile", "Projects", "Contact"];
 
   const handleClick = (event) => {
-    event.preventDefault(); // Prevent the default mailto action
+    event.preventDefault();
     const email = "samuelnummela06@gmail.com";
 
     navigator.clipboard
@@ -35,7 +35,7 @@ export default function App() {
       .then(() => {
         setPopoverMessage("Email address copied to clipboard!");
         setIsPopoverVisible(true);
-        setTimeout(() => setIsPopoverVisible(false), 1500); // Hide popover after 1.5 seconds
+        setTimeout(() => setIsPopoverVisible(false), 1500);
       })
       .catch((err) => {
         console.error("Failed to copy email to clipboard: ", err);
@@ -51,58 +51,36 @@ export default function App() {
 
   return (
     <>
-      <Navbar
-        isBordered
-        isMenuOpen={isMenuOpen}
-        onMenuOpenChange={setIsMenuOpen}
-      >
-        <NavbarContent className="sm:hidden" justify="start">
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          />
+      <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+        <NavbarContent className="md:hidden" justify="start">
+          <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
         </NavbarContent>
 
-        <NavbarContent className="sm:hidden pr-3" justify="center">
+        <NavbarContent className="md:hidden pr-3" justify="center">
           <NavbarBrand>
             <p className="font-bold text-inherit">Samuel Nummela</p>
           </NavbarBrand>
         </NavbarContent>
 
-        <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarContent className="hidden md:flex gap-4" justify="center">
           <NavbarBrand>
             <p className="font-bold text-inherit">SN</p>
           </NavbarBrand>
           <NavbarItem>
-            <Link
-              color="foreground"
-              href="#profile"
-              className="hover:text-purple-500 hover:opacity-85"
-            >
+            <Link color="foreground" href="#profile" className="hover:text-purple-500 hover:opacity-85">
               Profile
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link
-              color="foreground"
-              href="#projects"
-              className="hover:text-yellow-500 hover:opacity-85"
-            >
+            <Link color="foreground" href="#projects" className="hover:text-yellow-500 hover:opacity-85">
               Projects
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link
-              color="foreground"
-              href="#contact"
-              className="hover:text-green-500 hover:opacity-85"
-            >
+            <Link color="foreground" href="#contact" className="hover:text-green-500 hover:opacity-85">
               Contact me
             </Link>
           </NavbarItem>
-        </NavbarContent>
-
-        <NavbarContent justify="end">
-          <NavbarItem></NavbarItem>
         </NavbarContent>
 
         <NavbarMenu>
@@ -127,39 +105,36 @@ export default function App() {
         </NavbarMenu>
       </Navbar>
       <ScrollShadow hideScrollBar className="h-[770px] w-full">
-        <div
-          className="items-center flex justify-center mt-24 mb-12 flex-col gap-2"
-          id="profile"
-        >
+        <div className="flex flex-col items-center justify-center mt-24 mb-12 gap-4 px-4 sm:px-6 md:px-12 lg:px-24" id="profile">
           <Code
-            className="p-5 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out mr-12 hover:border-yellow-500"
+            className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-yellow-500"
             color="warning"
           >
-            <p className="text-3xl">
+            <p className="text-xl md:text-3xl">
               <span className="font-main">Hello</span>, I am
             </p>
           </Code>
           <Code
-            className="p-5 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out ml-12 hover:border-purple-500"
+            className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-purple-500"
             color="secondary"
           >
-            <p className="text-2xl">Samuel Nummela</p>
+            <p className="text-xl md:text-2xl">Samuel Nummela</p>
           </Code>
           <Code
-            className="p-5 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out mr-44 hover:border-blue-500"
+            className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-blue-500"
             color="primary"
           >
-            <p className="text-2xl">18 yo</p>
+            <p className="text-xl md:text-2xl">18 yo</p>
           </Code>
           <Code
-            className="p-5 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out ml-24 hover:border-green-500"
+            className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-green-500"
             color="success"
           >
-            <p className="text-xl">A Fullstack Developer</p>
+            <p className="text-lg md:text-xl">A Fullstack Developer</p>
           </Code>
         </div>
 
-        <div className="flex items-center justify-center flex-row space-x-8">
+        <div className="flex items-center justify-center flex-wrap gap-8 px-4 sm:px-6 md:px-12 lg:px-24">
           <a
             href="https://www.github.com/saow"
             target="_blank"
@@ -190,24 +165,24 @@ export default function App() {
             </PopoverTrigger>
             <PopoverContent>
               <div className="px-3 py-2">
-                <div className="text-small font-bold ">Notification</div>
+                <div className="text-small font-bold">Notification</div>
                 <div className="text-tiny">{popoverMessage}</div>
               </div>
             </PopoverContent>
           </Popover>
         </div>
 
-        <div className="flex flex-col items-center my-32" id="projects">
+        <div className="flex flex-col items-center my-32 px-4 sm:px-6 md:px-12 lg:px-24" id="projects">
           <div className="mb-12">
-            <p className="flex flex-col items-center text-4xl font-semibold font-main text-yellow-500">
+            <p className="text-3xl md:text-4xl font-semibold font-main text-yellow-500">
               Projects
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-12 mx-48">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-4 sm:mx-6 md:mx-12 lg:mx-24">
             {projects.length > 0 ? (
               projects.map((project) => (
-                <div key={project.id} className="rounded-xl border-3 p-6">
-                  <div className="font-main font-bold text-xl">
+                <div key={project.id} className="rounded-xl border-3 p-4 sm:p-6">
+                  <div className="font-main font-bold text-lg sm:text-xl">
                     {project.name}
                   </div>
                   <br />
@@ -220,16 +195,16 @@ export default function App() {
                             : "https://via.placeholder.com/200"
                         }
                         alt={project.name}
-                        className="rounded-md w-full h-[220px] mb-4 hover:opacity-85 transition-all duration-300 ease-in-out"
+                        className="rounded-md w-full h-[180px] sm:h-[220px] mb-4 hover:opacity-85 transition-all duration-300 ease-in-out"
                       />
                     </a>
                   </div>
-                  <div className="">{project.description}</div>
+                  <div className="text-sm">{project.description}</div>
                   <br />
-                  <div className="font-main font-bold text-lg ">Tech stack:</div>
-                  <div className="">{project.techStack.join(", ")}</div>
+                  <div className="font-main font-bold text-md sm:text-lg">Tech stack:</div>
+                  <div className="text-sm">{project.techStack.join(", ")}</div>
                   <br />
-                  <div className="flex justify-end gap-4">
+                  <div className="flex justify-end gap-2 sm:gap-4">
                     {project.github && (
                       <Button
                         color="secondary"
