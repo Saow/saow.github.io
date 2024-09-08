@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "SpaceGame",
+    "description": "SpaceGame is my first C# project made in Unity. It is a simple space shooter game where you control a spaceship and shoot down enemy ships",
+    "image": "./SpaceGame.png",
+    "github": "https://github.com/saow/SpaceGame",
+    "demo": "https://saow.github.io/SpaceGame",
+    "techStack": ["C#", "Unity"]
+  },
+  {
+    "id": 2,
+    "name": "Shelly 3 pro Electricity Switch",
+    "description": "This is a project with my friend. We made script for Shelly 3 Pro electricity exchange switch. It switches relays on and off based on current electricity price using api.",
+    "image": "./shelly.png",
+    "github": "https://github.com/Saow/Shelly3Pro-porssisahko",
+    "demo": "",
+    "techStack": ["Espruino"]
+  },
+  {
+    "id": 3,
+    "name": "Reppu",
+    "description": "Reppu is a school group project. We made a device register system with database.",
+    "image": "./reppu.png",
+    "github": "",
+    "demo": "https://reppu.numsam22.treok.io/",
+    "techStack": ["PHP", "MySQL"]
+  }
+]
