@@ -21924,7 +21924,7 @@ function t$() {
     };
   return (
     w.useEffect(() => {
-      fetch("projects.json")
+      fetch("././projects.json")
         .then((c) => c.json())
         .then((c) => r(c))
         .catch((c) => console.error("Error fetching projects:", c));
@@ -22002,8 +22002,9 @@ function t$() {
                           : d === a.length - 1
                           ? "danger"
                           : "foreground",
-                      href: "#",
+                      href: `#${c.toLowerCase()}`,
                       size: "lg",
+                      onClick: () => t(!1),
                       children: c,
                     }),
                   },
