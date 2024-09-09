@@ -51,9 +51,15 @@ export default function App() {
 
   return (
     <>
-      <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+      <Navbar
+        isBordered
+        isMenuOpen={isMenuOpen}
+        onMenuOpenChange={setIsMenuOpen}
+      >
         <NavbarContent className="md:hidden" justify="start">
-          <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
+          <NavbarMenuToggle
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          />
         </NavbarContent>
 
         <NavbarContent className="md:hidden pr-3" justify="center">
@@ -67,17 +73,29 @@ export default function App() {
             <p className="font-bold text-inherit">SN</p>
           </NavbarBrand>
           <NavbarItem>
-            <Link color="foreground" href="#profile" className="hover:text-purple-500 hover:opacity-85">
+            <Link
+              color="foreground"
+              href="#profile"
+              className="hover:text-purple-500 hover:opacity-85"
+            >
               Profile
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#projects" className="hover:text-yellow-500 hover:opacity-85">
+            <Link
+              color="foreground"
+              href="#projects"
+              className="hover:text-yellow-500 hover:opacity-85"
+            >
               Projects
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#contact" className="hover:text-green-500 hover:opacity-85">
+            <Link
+              color="foreground"
+              href="#contact"
+              className="hover:text-green-500 hover:opacity-85"
+            >
               Contact me
             </Link>
           </NavbarItem>
@@ -95,8 +113,9 @@ export default function App() {
                     ? "danger"
                     : "foreground"
                 }
-                href="#"
+                href={`#${item.toLowerCase()}`}
                 size="lg"
+                onClick={() => setIsMenuOpen(false)} // Close the menu after selection
               >
                 {item}
               </Link>
@@ -105,7 +124,10 @@ export default function App() {
         </NavbarMenu>
       </Navbar>
       <ScrollShadow hideScrollBar className="h-[770px] w-full">
-        <div className="flex flex-col items-center justify-center mt-24 mb-12 gap-4 px-4 sm:px-6 md:px-12 lg:px-24" id="profile">
+        <div
+          className="flex flex-col items-center justify-center mt-24 mb-12 gap-4 px-4 sm:px-6 md:px-12 lg:px-24"
+          id="profile"
+        >
           <Code
             className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-yellow-500"
             color="warning"
@@ -172,7 +194,10 @@ export default function App() {
           </Popover>
         </div>
 
-        <div className="flex flex-col items-center my-32 px-4 sm:px-6 md:px-12 lg:px-24" id="projects">
+        <div
+          className="flex flex-col items-center my-32 px-4 sm:px-6 md:px-12 lg:px-24"
+          id="projects"
+        >
           <div className="mb-12">
             <p className="text-3xl md:text-4xl font-semibold font-main text-yellow-500">
               Projects
@@ -181,7 +206,10 @@ export default function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-4 sm:mx-6 md:mx-12 lg:mx-24">
             {projects.length > 0 ? (
               projects.map((project) => (
-                <div key={project.id} className="rounded-xl border-3 p-4 sm:p-6">
+                <div
+                  key={project.id}
+                  className="rounded-xl border-3 p-4 sm:p-6"
+                >
                   <div className="font-main font-bold text-lg sm:text-xl">
                     {project.name}
                   </div>
@@ -201,7 +229,9 @@ export default function App() {
                   </div>
                   <div className="text-sm">{project.description}</div>
                   <br />
-                  <div className="font-main font-bold text-md sm:text-lg">Tech stack:</div>
+                  <div className="font-main font-bold text-md sm:text-lg">
+                    Tech stack:
+                  </div>
                   <div className="text-sm">{project.techStack.join(", ")}</div>
                   <br />
                   <div className="flex justify-end gap-2 sm:gap-4">
