@@ -25,5 +25,14 @@
     "github": "",
     "demo": "https://reppu.numsam22.treok.io/",
     "techStack": ["PHP", "MySQL"]
+  },
+  {
+    "id": 4,
+    "name": "Carparkpy",
+    "description": "Carparkpy is application to see how many parking spaces are available using machine learning.",
+    "image": "./kuva.png",
+    "github": "",
+    "demo": "https://carparkpy.vercel.app/",
+    "techStack": ["Python", "React", "Flask", "Yolo"]
   }
 ]
