@@ -43,7 +43,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    fetch("./../src/projects.json")
+    fetch("./projects.json")
       .then((response) => response.json())
       .then((data) => setProjects(data))
       .catch((error) => console.error("Error fetching projects:", error));
