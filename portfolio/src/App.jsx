@@ -105,7 +105,7 @@ export default function App() {
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                className="w-full"
+                className="w-full items-center flex flex-col p-3 text-xl font-main font-semibold"
                 color={
                   index === 1
                     ? "warning"
@@ -123,9 +123,10 @@ export default function App() {
           ))}
         </NavbarMenu>
       </Navbar>
+      <div className="h-24" id="profile">
+      </div>
         <div
-          className="flex flex-col items-center justify-center mt-24 mb-12 gap-4 px-4 sm:px-6 md:px-12 lg:px-24"
-          id="profile"
+          className="flex flex-col items-center justify-center mb-12 gap-4 px-4 sm:px-6 md:px-12 lg:px-24"
         >
           <Code
             className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-yellow-500"
@@ -202,12 +203,12 @@ export default function App() {
               Projects
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-[27rem] mx-4 flex-col items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-[5rem] mx-4 flex-col items-center">
             {projects.length > 0 ? (
               projects.map((project) => (
                 <div
                   key={project.id}
-                  className="w-[25rem] h-[100%] rounded-xl border-3 p-4 sm:p-6"
+                  className=" md:w-[25rem] h-[100%] rounded-xl border-3 p-4 sm:p-6"
                 >
                   <div className="font-main font-bold text-lg sm:text-xl">
                     {project.name}
@@ -222,7 +223,7 @@ export default function App() {
                             : "https://via.placeholder.com/200"
                         }
                         alt={project.name}
-                        className="rounded-md w-full h-[180px] sm:h-[220px] mb-4 hover:opacity-85 transition-all duration-300 ease-in-out"
+                        className="rounded-md w-full h-[180px] sm:h-[220px] mb-4 hover:opacity-85 transition-all duration-300 ease-in-out object-contain"
                       />
                     </a>
                   </div>
@@ -256,6 +257,29 @@ export default function App() {
             ) : (
               <p>Loading projects...</p>
             )}
+          </div>
+          <div className="mt-24">
+            <div className="flex flex-col">
+              <p className="text-3xl font-main font-semibold text-green-500">Skills</p>
+            </div>
+            <table>
+              <tr>
+                <td className="text-xl font-semibold">Frontend:</td>
+                <td className="text-xl font-semibold">React, Javascript, Tailwind CSS</td>
+              </tr>
+              <tr>
+                <td className="text-xl font-semibold">Backend:</td>
+                <td className="text-xl font-semibold">PHP, Python, C#, Node.js, MySQL</td>
+              </tr>
+              <tr>
+                <td className="text-xl font-semibold">Testing:</td>
+                <td className="text-xl font-semibold">Cypress, Jest</td>
+              </tr>
+              <tr>
+                <td className="text-xl font-semibold">Others:</td>
+                <td className="text-xl font-semibold">Git, Docker, Unity, AWS, Azure, Linux, Windows, MacOS</td>
+              </tr>
+            </table>
           </div>
           <div className="mt-24">
             <p className="text-3xl font-main font-bold text-purple-400 mb-8">Contact me</p>
