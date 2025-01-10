@@ -123,7 +123,6 @@ export default function App() {
           ))}
         </NavbarMenu>
       </Navbar>
-      <ScrollShadow hideScrollBar className="h-[770px] w-full">
         <div
           className="flex flex-col items-center justify-center mt-24 mb-12 gap-4 px-4 sm:px-6 md:px-12 lg:px-24"
           id="profile"
@@ -146,7 +145,7 @@ export default function App() {
             className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-blue-500"
             color="primary"
           >
-            <p className="text-xl md:text-2xl">18 yo</p>
+            <p className="text-xl md:text-2xl">18 years old</p>
           </Code>
           <Code
             className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-green-500"
@@ -198,17 +197,17 @@ export default function App() {
           className="flex flex-col items-center my-32 px-4 sm:px-6 md:px-12 lg:px-24"
           id="projects"
         >
-          <div className="mb-12">
+          <div className="mb-12 mt-24">
             <p className="text-3xl md:text-4xl font-semibold font-main text-yellow-500">
               Projects
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-4 sm:mx-6 md:mx-12 lg:mx-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-[27rem] mx-4 flex-col items-center">
             {projects.length > 0 ? (
               projects.map((project) => (
                 <div
                   key={project.id}
-                  className="rounded-xl border-3 p-4 sm:p-6"
+                  className="w-[25rem] h-[100%] rounded-xl border-3 p-4 sm:p-6"
                 >
                   <div className="font-main font-bold text-lg sm:text-xl">
                     {project.name}
@@ -258,8 +257,13 @@ export default function App() {
               <p>Loading projects...</p>
             )}
           </div>
+          <div className="mt-24">
+            <p className="text-3xl font-main font-bold text-purple-400 mb-8">Contact me</p>
+          </div>
+          <div className="flex flex-col" id="contact">
+            <p className="text-xl font-semibold text-center items-center">Samuelnummela06@gmail.com</p>
+          </div>
         </div>
-      </ScrollShadow>
     </>
   );
 }
