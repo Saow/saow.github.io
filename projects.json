@@ -1,12 +1,18 @@
 [
   {
     "id": 1,
-    "name": "SpaceGame",
-    "description": "SpaceGame is my first C# project made in Unity. It is a simple space shooter game where you control a spaceship and shoot down enemy ships",
-    "image": "./SpaceGame.png",
-    "github": "https://github.com/saow/SpaceGame",
-    "demo": "https://saow.github.io/SpaceGame",
-    "techStack": ["C#", "Unity"]
+    "id": 4,
+    "name": "Carparkpy",
+    "description": "Carparkpy is application to see how many parking spaces are available using machine learning.",
+    "image": "./kuva.png",
+    "github": "",
+    "demo": "https://carparkpy.vercel.app/",
+    "techStack": [
+      "Python",
+      "React",
+      "Flask",
+      "Yolo"
+    ]
   },
   {
     "id": 2,
@@ -15,15 +21,54 @@
     "image": "./shelly.png",
     "github": "https://github.com/Saow/Shelly3Pro-porssisahko",
     "demo": "",
-    "techStack": ["Espruino"]
+    "techStack": [
+      "Espruino"
+    ]
   },
   {
     "id": 3,
     "name": "Reppu",
-    "description": "Reppu is a school group project. We made a device register system with database.",
+    "description": "Reppu is a school group project. We made a device register system with database. Credientials: admin:admin",
     "image": "./reppu.png",
     "github": "",
     "demo": "https://reppu.numsam22.treok.io/",
-    "techStack": ["PHP", "MySQL"]
+    "techStack": [
+      "PHP",
+      "MySQL"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "GadolCar",
+    "description": "GadolCar is first my react project. Its a car rental service website.",
+    "image": "./gadolcar.png",
+    "github": "https://github.com/Saow/GadolCar",
+    "demo": "https://saow.github.io/GadolCar/",
+    "techStack": [
+      "React"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "WeatherApp",
+    "description": "This is was my first Javascript project.",
+    "image": "./weather.png",
+    "github": "https://github.com/Saow/WeatherApp",
+    "demo": "https://saow.github.io/WeatherApp/",
+    "techStack": [
+      "Javascript", "HTML", "CSS"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "SpaceGame",
+    "description": "SpaceGame is my first C# project made in Unity. It is a simple space shooter game where you control a spaceship and shoot down enemy ships",
+    "image": "./SpaceGame.png",
+    "github": "https://github.com/saow/SpaceGame",
+    "demo": "https://saow.github.io/SpaceGame",
+    "techStack": [
+      "C#",
+      "Unity"
+    ]
   }
 ]
