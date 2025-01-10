@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-const {nextui} = require("@nextui-org/react");
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
+import { nextui } from "@nextui-org/react";
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+
 export default {
   content: [
     "./index.html",
@@ -13,8 +12,8 @@ export default {
     extend: {},
     fontFamily: {
       main: ["Playwrite CU", "cursive"],
-    }
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
-}
+};

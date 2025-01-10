@@ -51,7 +51,7 @@
   {
     "id": 5,
     "name": "WeatherApp",
-    "description": "This was my first Javascript project.",
+    "description": "This is was my first Javascript project.",
     "image": "./weather.png",
     "github": "https://github.com/Saow/WeatherApp",
     "demo": "https://saow.github.io/WeatherApp/",

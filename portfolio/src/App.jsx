@@ -123,171 +123,198 @@ export default function App() {
           ))}
         </NavbarMenu>
       </Navbar>
-      <div className="h-24" id="profile">
+      <div className="h-24" id="profile"></div>
+      <div className="flex flex-col items-center justify-center mb-12 gap-4 px-4 sm:px-6 md:px-12 lg:px-24">
+        <Code
+          className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-yellow-500"
+          color="warning"
+        >
+          <p className="text-xl md:text-3xl">
+            <span className="font-main">Hello</span>, I am
+          </p>
+        </Code>
+        <Code
+          className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-purple-500"
+          color="secondary"
+        >
+          <p className="text-xl md:text-2xl">Samuel Nummela</p>
+        </Code>
+        <Code
+          className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-blue-500"
+          color="primary"
+        >
+          <p className="text-xl md:text-2xl">18 years old</p>
+        </Code>
+        <Code
+          className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-green-500"
+          color="success"
+        >
+          <p className="text-lg md:text-xl">A Fullstack Developer</p>
+        </Code>
       </div>
-        <div
-          className="flex flex-col items-center justify-center mb-12 gap-4 px-4 sm:px-6 md:px-12 lg:px-24"
-        >
-          <Code
-            className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-yellow-500"
-            color="warning"
-          >
-            <p className="text-xl md:text-3xl">
-              <span className="font-main">Hello</span>, I am
-            </p>
-          </Code>
-          <Code
-            className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-purple-500"
-            color="secondary"
-          >
-            <p className="text-xl md:text-2xl">Samuel Nummela</p>
-          </Code>
-          <Code
-            className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-blue-500"
-            color="primary"
-          >
-            <p className="text-xl md:text-2xl">18 years old</p>
-          </Code>
-          <Code
-            className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-green-500"
-            color="success"
-          >
-            <p className="text-lg md:text-xl">A Fullstack Developer</p>
-          </Code>
-        </div>
 
-        <div className="flex items-center justify-center flex-wrap gap-8 px-4 sm:px-6 md:px-12 lg:px-24">
-          <a
-            href="https://www.github.com/saow"
-            target="_blank"
-            className="bg-slate-300 p-3 rounded-2xl border-4 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-purple-500"
-          >
-            <img src={svg} alt="github" className="w-10 h-10" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/samuelnummela"
-            target="_blank"
-            className="bg-slate-300 p-3 rounded-2xl border-4 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-purple-500"
-          >
-            <img src={svg2} alt="linkedin" className="w-10 h-10" />
-          </a>
-          <Popover
-            placement="right"
-            showArrow={false}
-            isOpen={isPopoverVisible}
-          >
-            <PopoverTrigger>
-              <a
-                href="mailto:samuelnummela06@gmail.com"
-                onClick={handleClick}
-                className="bg-slate-300 p-3 rounded-2xl border-4 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-purple-500"
-              >
-                <img src={svg3} alt="email" className="w-10 h-10" />
-              </a>
-            </PopoverTrigger>
-            <PopoverContent>
-              <div className="px-3 py-2">
-                <div className="text-small font-bold">Notification</div>
-                <div className="text-tiny">{popoverMessage}</div>
-              </div>
-            </PopoverContent>
-          </Popover>
-        </div>
-
-        <div
-          className="flex flex-col items-center my-32 px-4 sm:px-6 md:px-12 lg:px-24"
-          id="projects"
+      <div className="flex items-center justify-center flex-wrap gap-8 px-4 sm:px-6 md:px-12 lg:px-24">
+        <a
+          href="https://www.github.com/saow"
+          target="_blank"
+          className="bg-slate-300 p-3 rounded-2xl border-4 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-purple-500"
         >
-          <div className="mb-12 mt-24">
-            <p className="text-3xl md:text-4xl font-semibold font-main text-yellow-500">
-              Projects
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-[5rem] mx-4 flex-col items-center">
-            {projects.length > 0 ? (
-              projects.map((project) => (
-                <div
-                  key={project.id}
-                  className=" md:w-[25rem] h-[100%] rounded-xl border-3 p-4 sm:p-6"
-                >
-                  <div className="font-main font-bold text-lg sm:text-xl">
-                    {project.name}
-                  </div>
-                  <br />
-                  <div>
-                    <a href={project.demo ? project.demo : project.github}>
-                      <img
-                        src={
-                          project.image
-                            ? project.image
-                            : "https://via.placeholder.com/200"
-                        }
-                        alt={project.name}
-                        className="rounded-md w-full h-[180px] sm:h-[220px] mb-4 hover:opacity-85 transition-all duration-300 ease-in-out object-contain"
-                      />
-                    </a>
-                  </div>
-                  <div className="text-sm">{project.description}</div>
-                  <br />
-                  <div className="font-main font-bold text-md sm:text-lg">
-                    Tech stack:
-                  </div>
-                  <div className="text-sm">{project.techStack.join(", ")}</div>
-                  <br />
-                  <div className="flex justify-end gap-2 sm:gap-4">
-                    {project.github && (
-                      <Button
-                        color="secondary"
-                        onClick={() => window.open(project.github, "_blank")}
-                      >
-                        Github
-                      </Button>
-                    )}
-                    {project.demo && (
-                      <Button
-                        color="success"
-                        onClick={() => window.open(project.demo, "_blank")}
-                      >
-                        Demo
-                      </Button>
-                    )}
-                  </div>
-                </div>
-              ))
-            ) : (
-              <p>Loading projects...</p>
-            )}
-          </div>
-          <div className="mt-24">
-            <div className="flex flex-col">
-              <p className="text-3xl font-main font-semibold text-green-500">Skills</p>
+          <img src={svg} alt="github" className="w-10 h-10" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/samuelnummela"
+          target="_blank"
+          className="bg-slate-300 p-3 rounded-2xl border-4 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-purple-500"
+        >
+          <img src={svg2} alt="linkedin" className="w-10 h-10" />
+        </a>
+        <Popover placement="right" showArrow={false} isOpen={isPopoverVisible}>
+          <PopoverTrigger>
+            <a
+              href="mailto:samuelnummela06@gmail.com"
+              onClick={handleClick}
+              className="bg-slate-300 p-3 rounded-2xl border-4 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-purple-500"
+            >
+              <img src={svg3} alt="email" className="w-10 h-10" />
+            </a>
+          </PopoverTrigger>
+          <PopoverContent>
+            <div className="px-3 py-2">
+              <div className="text-small font-bold">Notification</div>
+              <div className="text-tiny">{popoverMessage}</div>
             </div>
-            <table>
-              <tr>
-                <td className="text-xl font-semibold">Frontend:</td>
-                <td className="text-xl font-semibold">React, Javascript, Tailwind CSS, React Native</td>
-              </tr>
-              <tr>
-                <td className="text-xl font-semibold">Backend:</td>
-                <td className="text-xl font-semibold">PHP, Python, C#, Node.js, MySQL</td>
-              </tr>
-              <tr>
-                <td className="text-xl font-semibold">Testing:</td>
-                <td className="text-xl font-semibold">Cypress, Jest</td>
-              </tr>
-              <tr>
-                <td className="text-xl font-semibold">Others:</td>
-                <td className="text-xl font-semibold">Git, Docker, Unity, AWS, Azure, Linux, Windows, MacOS</td>
-              </tr>
-            </table>
-          </div>
-          <div className="mt-24">
-            <p className="text-3xl font-main font-bold text-purple-400 mb-8">Contact me</p>
-          </div>
-          <div className="flex flex-col" id="contact">
-            <p className="text-xl font-semibold text-center items-center">Samuelnummela06@gmail.com</p>
-          </div>
+          </PopoverContent>
+        </Popover>
+      </div>
+
+      <div
+        className="flex flex-col items-center my-32 px-4 sm:px-6 md:px-12 lg:px-24"
+        id="projects"
+      >
+        <div className="mb-12 mt-24">
+          <p className="text-3xl md:text-4xl font-semibold font-main text-yellow-500">
+            Projects
+          </p>
         </div>
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-[5rem] mx-4 flex-col items-center">
+          {projects.length > 0 ? (
+            projects.map((project) => (
+              <div
+                key={project.id}
+                className=" md:w-[25rem] h-[100%] rounded-xl border-3 p-4 sm:p-6"
+              >
+                <div className="font-main font-bold text-lg sm:text-xl">
+                  {project.name}
+                </div>
+                <br />
+                <div>
+                  <a href={project.demo ? project.demo : project.github}>
+                    <img
+                      src={
+                        project.image
+                          ? project.image
+                          : "https://via.placeholder.com/200"
+                      }
+                      alt={project.name}
+                      className="rounded-md w-full h-[180px] sm:h-[220px] mb-4 hover:opacity-85 transition-all duration-300 ease-in-out object-contain"
+                    />
+                  </a>
+                </div>
+                <div className="text-sm">{project.description}</div>
+                <br />
+                <div className="font-main font-bold text-md sm:text-lg">
+                  Tech stack:
+                </div>
+                <div className="text-sm">{project.techStack.join(", ")}</div>
+                <br />
+                <div className="flex justify-end gap-2 sm:gap-4">
+                  {project.github && (
+                    <Button
+                      color="secondary"
+                      onClick={() => window.open(project.github, "_blank")}
+                    >
+                      Github
+                    </Button>
+                  )}
+                  {project.demo && (
+                    <Button
+                      color="success"
+                      onClick={() => window.open(project.demo, "_blank")}
+                    >
+                      Demo
+                    </Button>
+                  )}
+                </div>
+              </div>
+            ))
+          ) : (
+            <p>Loading projects...</p>
+          )}
+        </div>
+        <div className="mt-24">
+          <div className="flex flex-col">
+            <p className="text-3xl font-main font-semibold text-green-500 text-center mb-8">
+              Skills
+            </p>
+          </div>
+          <table className="border-4 border-green-600 w-full rounded-2xl shadow-2xl overflow-hidden items-center justify-center">
+            <thead>
+              <tr className="bg-gradient-to-r from-green-500 to-lime-500 text-white">
+                <th className="text-2xl font-bold py-4 px-6 text-left border-b-4 border-green-400">
+                  Category
+                </th>
+                <th className="text-2xl font-bold py-4 px-6 text-left border-b-4 border-green-400">
+                  Technologies
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="odd:bg-green-50 even:bg-white hover:bg-green-200 transition-colors duration-300">
+                <td className="text-lg font-semibold py-4 px-6 border border-green-500 rounded-l-xl">
+                  Frontend
+                </td>
+                <td className="text-lg py-4 px-6 border border-green-500 rounded-r-xl">
+                  React, JavaScript, Tailwind CSS, React Native
+                </td>
+              </tr>
+              <tr className="odd:bg-green-50 even:bg-white hover:bg-green-200 transition-colors duration-300">
+                <td className="text-lg font-semibold py-4 px-6 border border-green-500 rounded-l-xl">
+                  Backend
+                </td>
+                <td className="text-lg py-4 px-6 border border-green-500 rounded-r-xl">
+                  PHP, Python, C#, Node.js, MySQL
+                </td>
+              </tr>
+              <tr className="odd:bg-green-50 even:bg-white hover:bg-green-200 transition-colors duration-300">
+                <td className="text-lg font-semibold py-4 px-6 border border-green-500 rounded-l-xl">
+                  Testing
+                </td>
+                <td className="text-lg py-4 px-6 border border-green-500 rounded-r-xl">
+                  Cypress, Jest
+                </td>
+              </tr>
+              <tr className="odd:bg-green-50 even:bg-white hover:bg-green-200 transition-colors duration-300">
+                <td className="text-lg font-semibold py-4 px-6 border border-green-500 rounded-l-xl">
+                  Others
+                </td>
+                <td className="text-lg py-4 px-6 border border-green-500 rounded-r-xl">
+                  Git, Docker, Unity, AWS, Azure, Linux, Windows, MacOS
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="mt-24">
+          <p className="text-3xl font-main font-bold text-purple-400 mb-8 text-center">
+            Contact me
+          </p>
+        </div>
+        <div className="flex flex-col" id="contact">
+          <p className="text-xl font-semibold text-center items-center">
+            Samuelnummela06@gmail.com
+          </p>
+        </div>
+      </div>
     </>
   );
 }
