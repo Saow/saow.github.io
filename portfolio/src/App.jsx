@@ -85,7 +85,7 @@ export default function App() {
             <Link
               color="foreground"
               href="#projects"
-              className="hover:text-yellow-500 hover:opacity-85"
+              className="hover:text-purple-500 hover:opacity-85"
             >
               Projects
             </Link>
@@ -94,7 +94,7 @@ export default function App() {
             <Link
               color="foreground"
               href="#contact"
-              className="hover:text-green-500 hover:opacity-85"
+              className="hover:text-purple-500 hover:opacity-85"
             >
               Contact me
             </Link>
@@ -188,27 +188,30 @@ export default function App() {
       </div>
 
       <div
-        className="flex flex-col items-center my-32 px-4 sm:px-6 md:px-12 lg:px-24"
+        className="flex flex-col items-center my-32  sm:px-6 md:px-12 lg:px-24"
         id="projects"
       >
         <div className="mb-12 mt-24">
-          <p className="text-3xl md:text-4xl font-semibold font-main text-yellow-500">
+          <p className="text-3xl md:text-4xl font-semibold font-main text-purple-500">
             Projects
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-[5rem] mx-4 flex-col items-center">
+        <div className="grid lg:grid-cols-4 gap-[5rem] flex-col">
           {projects.length > 0 ? (
             projects.map((project) => (
               <div
                 key={project.id}
-                className=" md:w-[25rem] h-[100%] rounded-xl border-3 p-4 sm:p-6"
+                className="w-full md:w-[25rem] md:h-[100%] rounded-xl border-3 p-4 sm:p-6"
               >
                 <div className="font-main font-bold text-lg sm:text-xl">
                   {project.name}
                 </div>
                 <br />
-                <div>
-                  <a href={project.demo ? project.demo : project.github}>
+                <div className="">
+                  <a
+                    className=""
+                    href={project.demo ? project.demo : project.github}
+                  >
                     <img
                       src={
                         project.image
@@ -222,12 +225,12 @@ export default function App() {
                 </div>
                 <div className="text-sm">{project.description}</div>
                 <br />
+                .
                 <div className="font-main font-bold text-md sm:text-lg">
                   Tech stack:
                 </div>
-                <div className="text-sm">{project.techStack.join(", ")}</div>
-                <br />
-                <div className="flex justify-end gap-2 sm:gap-4">
+                <div className="text-md">{project.techStack.join(", ")}</div>
+                <div className="flex flex-col-reverse border-2 justify-between  gap-2 sm:gap-4">
                   {project.github && (
                     <Button
                       color="secondary"
@@ -253,51 +256,51 @@ export default function App() {
         </div>
         <div className="mt-24">
           <div className="flex flex-col">
-            <p className="text-3xl font-main font-semibold text-green-500 text-center mb-8">
+            <p className="text-3xl font-main font-semibold text-purple-500 text-center mb-8">
               Skills
             </p>
           </div>
-          <table className="border-4 border-green-600 w-full rounded-2xl shadow-2xl overflow-hidden items-center justify-center">
+          <table className="border-4 border-purple-600 w-full rounded-2xl shadow-2xl overflow-hidden items-center justify-center">
             <thead>
-              <tr className="bg-gradient-to-r from-green-500 to-lime-500 text-white">
-                <th className="text-2xl font-bold py-4 px-6 text-left border-b-4 border-green-400">
+              <tr className="bg-gradient-to-r from-purple-500 to-purple-400 text-white">
+                <th className="text-2xl font-bold py-4 px-6 text-left border-b-4 border-purple-400">
                   Category
                 </th>
-                <th className="text-2xl font-bold py-4 px-6 text-left border-b-4 border-green-400">
+                <th className="text-2xl font-bold py-4 px-6 text-left border-b-4 border-purple-400">
                   Technologies
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr className="odd:bg-green-50 even:bg-white hover:bg-green-200 transition-colors duration-300">
-                <td className="text-lg font-semibold py-4 px-6 border border-green-500 rounded-l-xl">
+              <tr className="odd:bg-purple-50 even:bg-white hover:bg-purple-200 transition-colors duration-300">
+                <td className="text-lg font-semibold py-4 px-6 border border-purple-500 rounded-l-xl">
                   Frontend
                 </td>
-                <td className="text-lg py-4 px-6 border border-green-500 rounded-r-xl">
+                <td className="text-lg py-4 px-6 border border-purple-500 rounded-r-xl">
                   React, JavaScript, Tailwind CSS, React Native
                 </td>
               </tr>
-              <tr className="odd:bg-green-50 even:bg-white hover:bg-green-200 transition-colors duration-300">
-                <td className="text-lg font-semibold py-4 px-6 border border-green-500 rounded-l-xl">
+              <tr className="odd:bg-purple-50 even:bg-white hover:bg-purple-200 transition-colors duration-300">
+                <td className="text-lg font-semibold py-4 px-6 border border-purple-500 rounded-l-xl">
                   Backend
                 </td>
-                <td className="text-lg py-4 px-6 border border-green-500 rounded-r-xl">
+                <td className="text-lg py-4 px-6 border border-purple-500 rounded-r-xl">
                   PHP, Python, C#, Node.js, MySQL
                 </td>
               </tr>
-              <tr className="odd:bg-green-50 even:bg-white hover:bg-green-200 transition-colors duration-300">
-                <td className="text-lg font-semibold py-4 px-6 border border-green-500 rounded-l-xl">
+              <tr className="odd:bg-purple-50 even:bg-white hover:bg-purple-200 transition-colors duration-300">
+                <td className="text-lg font-semibold py-4 px-6 border border-purple-500 rounded-l-xl">
                   Testing
                 </td>
-                <td className="text-lg py-4 px-6 border border-green-500 rounded-r-xl">
+                <td className="text-lg py-4 px-6 border border-purple-500 rounded-r-xl">
                   Cypress, Jest
                 </td>
               </tr>
-              <tr className="odd:bg-green-50 even:bg-white hover:bg-green-200 transition-colors duration-300">
-                <td className="text-lg font-semibold py-4 px-6 border border-green-500 rounded-l-xl">
+              <tr className="odd:bg-purple-50 even:bg-white hover:bg-purple-200 transition-colors duration-300">
+                <td className="text-lg font-semibold py-4 px-6 border border-purple-500 rounded-l-xl">
                   Others
                 </td>
-                <td className="text-lg py-4 px-6 border border-green-500 rounded-r-xl">
+                <td className="text-lg py-4 px-6 border border-purple-500 rounded-r-xl">
                   Git, Docker, Unity, AWS, Azure, Linux, Windows, MacOS
                 </td>
               </tr>
