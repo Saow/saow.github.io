@@ -265,7 +265,7 @@ export default function App() {
             <table>
               <tr>
                 <td className="text-xl font-semibold">Frontend:</td>
-                <td className="text-xl font-semibold">React, Javascript, Tailwind CSS</td>
+                <td className="text-xl font-semibold">React, Javascript, Tailwind CSS, React Native</td>
               </tr>
               <tr>
                 <td className="text-xl font-semibold">Backend:</td>

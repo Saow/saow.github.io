@@ -28,7 +28,7 @@
   {
     "id": 3,
     "name": "Reppu",
-    "description": "Reppu is a school group project. We made a device register system with database.",
+    "description": "Reppu is a school group project. We made a device register system with database. Credientials: admin:admin",
     "image": "./reppu.png",
     "github": "",
     "demo": "https://reppu.numsam22.treok.io/",
