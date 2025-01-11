@@ -223,14 +223,13 @@ export default function App() {
                     />
                   </a>
                 </div>
-                <div className="text-sm">{project.description}</div>
+                <div className="h-24 w-62 text-base">{project.description}</div>
                 <br />
-                .
                 <div className="font-main font-bold text-md sm:text-lg">
                   Tech stack:
                 </div>
                 <div className="text-md">{project.techStack.join(", ")}</div>
-                <div className="flex flex-col-reverse border-2 justify-between  gap-2 sm:gap-4">
+                <div className="flex gap-2 sm:gap-4 ">
                   {project.github && (
                     <Button
                       color="secondary"
