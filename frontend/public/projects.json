@@ -27,8 +27,8 @@
   {
     "id": 4,
     "name": "Treeni+",
-    "description": "Treeniplus is training pwa application. There is a list of exercises you can do.",
-    "image": "./treeniplus.png",
+    "description": "Treeniplus is training PWA application. There is a list of exercises you can do and mark your sets when you are done.",
+    "image": "./TreeniPlus.png",
     "github": "",
     "demo": "https://treeniplus.vercel.app/",
     "techStack": [
