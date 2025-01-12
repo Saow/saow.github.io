@@ -256,10 +256,10 @@ export default function App() {
         <div className="mt-24">
           <div className="flex flex-col">
             <p className="text-3xl font-main font-semibold text-purple-500 text-center mb-8">
-              Skills
+              Skialls
             </p>
           </div>
-          <table className="border-4 border-purple-600 w-full rounded-2xl shadow-2xl overflow-hidden items-center justify-center">
+          <table className="w-52 rounded-2xl shadow-2xl overflow-hidden items-center justify-center">
             <thead>
               <tr className="bg-gradient-to-r from-purple-500 to-purple-400 text-white">
                 <th className="text-2xl font-bold py-4 px-6 text-left border-b-4 border-purple-400">
