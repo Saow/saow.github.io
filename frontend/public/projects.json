@@ -1,7 +1,6 @@
 [
   {
     "id": 1,
-    "id": 4,
     "name": "Carparkpy",
     "description": "Carparkpy is application to see how many parking spaces are available using machine learning.",
     "image": "./kuva.png",
@@ -23,6 +22,17 @@
     "demo": "",
     "techStack": [
       "Espruino"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Treeni+",
+    "description": "Treeniplus is training pwa application. There is a list of exercises you can do.",
+    "image": "./treeniplus.png",
+    "github": "",
+    "demo": "https://treeniplus.vercel.app/",
+    "techStack": [
+      "React"
     ]
   },
   {

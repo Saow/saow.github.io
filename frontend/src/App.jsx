@@ -129,7 +129,7 @@ export default function App() {
           className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-yellow-500"
           color="warning"
         >
-          <p className="text-xl md:text-3xl">
+          <p className="text-xl">
             <span className="font-main">Hello</span>, I am
           </p>
         </Code>
@@ -137,19 +137,19 @@ export default function App() {
           className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-purple-500"
           color="secondary"
         >
-          <p className="text-xl md:text-2xl">Samuel Nummela</p>
+          <p className="text-xl">Samuel Nummela</p>
         </Code>
         <Code
           className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-blue-500"
           color="primary"
         >
-          <p className="text-xl md:text-2xl">18 years old</p>
+          <p className="text-xl">18 years old</p>
         </Code>
         <Code
           className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-green-500"
           color="success"
         >
-          <p className="text-lg md:text-xl">A Fullstack Developer</p>
+          <p className="text-xl">A Fullstack Developer</p>
         </Code>
       </div>
 
@@ -192,48 +192,48 @@ export default function App() {
         id="projects"
       >
         <div className="mb-12 mt-24">
-          <p className="text-3xl md:text-4xl font-semibold font-main text-purple-500">
+          <p className="text-3xl font-semibold font-main text-purple-500">
             Projects
           </p>
         </div>
-        <div className="grid lg:grid-cols-4 gap-[5rem] flex-col">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-8 md:gap-12">
           {projects.length > 0 ? (
             projects.map((project) => (
               <div
                 key={project.id}
-                className="w-full md:w-[25rem] md:h-[100%] rounded-xl border-3 p-4 sm:p-6"
+                className="w-full rounded-xl border-3 p-4 sm:p-6 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
               >
-                <div className="font-main font-bold text-lg sm:text-xl">
+                <div className="font-main font-bold text-lg mb-3">
                   {project.name}
                 </div>
-                <br />
-                <div className="">
-                  <a
-                    className=""
-                    href={project.demo ? project.demo : project.github}
-                  >
-                    <img
-                      src={
-                        project.image
-                          ? project.image
-                          : "https://via.placeholder.com/200"
-                      }
-                      alt={project.name}
-                      className="rounded-md w-full h-[180px] sm:h-[220px] mb-4 hover:opacity-85 transition-all duration-300 ease-in-out object-contain"
-                    />
-                  </a>
-                </div>
-                <div className="h-24 w-62 text-base">{project.description}</div>
-                <br />
-                <div className="font-main font-bold text-md sm:text-lg">
+                <a
+                  href={project.demo ? project.demo : project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={
+                      project.image
+                        ? project.image
+                        : "https://via.placeholder.com/200"
+                    }
+                    alt={project.name}
+                    className="rounded-md w-full h-[180px] sm:h-[220px] mb-4 hover:opacity-90 transition-all duration-300 ease-in-out object-contain"
+                  />
+                </a>
+                <div className="h-24 text-base mb-4">{project.description}</div>
+                <div className="font-main font-bold text-md mb-2">
                   Tech stack:
                 </div>
-                <div className="text-md">{project.techStack.join(", ")}</div>
-                <div className="flex gap-2 sm:gap-4 ">
+                <div className="text-md mb-4">
+                  {project.techStack.join(", ")}
+                </div>
+                <div className="flex gap-3 flex-wrap">
                   {project.github && (
                     <Button
                       color="secondary"
                       onClick={() => window.open(project.github, "_blank")}
+                      className="px-4 py-2 text-sm"
                     >
                       Github
                     </Button>
@@ -242,6 +242,7 @@ export default function App() {
                     <Button
                       color="success"
                       onClick={() => window.open(project.demo, "_blank")}
+                      className="px-4 py-2 text-sm"
                     >
                       Demo
                     </Button>
@@ -250,16 +251,19 @@ export default function App() {
               </div>
             ))
           ) : (
-            <p>Loading projects...</p>
+            <p className="col-span-full text-center text-gray-500">
+              Loading projects...
+            </p>
           )}
         </div>
+
         <div className="mt-24">
           <div className="flex flex-col">
             <p className="text-3xl font-main font-semibold text-purple-500 text-center mb-8">
               Skills
             </p>
           </div>
-          <table className="w-full rounded-2xl shadow-2xl overflow-hidden items-center justify-center">
+          <table className="w-full rounded-t-3xl shadow-2xl overflow-hidden items-center justify-center ">
             <thead>
               <tr className="bg-gradient-to-r from-purple-500 to-purple-400 text-white">
                 <th className="text-2xl font-bold py-4 px-6 text-left border-b-4 border-purple-400">
