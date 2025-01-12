@@ -78,7 +78,7 @@ export default function App() {
               href="#profile"
               className="hover:text-purple-500 hover:opacity-85"
             >
-              Profile
+              Profiili
             </Link>
           </NavbarItem>
           <NavbarItem>
@@ -87,7 +87,7 @@ export default function App() {
               href="#projects"
               className="hover:text-purple-500 hover:opacity-85"
             >
-              Projects
+              Projektit
             </Link>
           </NavbarItem>
           <NavbarItem>
@@ -96,7 +96,7 @@ export default function App() {
               href="#contact"
               className="hover:text-purple-500 hover:opacity-85"
             >
-              Contact me
+              Yhteystiedot
             </Link>
           </NavbarItem>
         </NavbarContent>
@@ -130,7 +130,7 @@ export default function App() {
           color="warning"
         >
           <p className="text-xl">
-            <span className="font-main">Hello</span>, I am
+            <span className="font-main">Hei</span>, olen
           </p>
         </Code>
         <Code
@@ -143,13 +143,13 @@ export default function App() {
           className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-blue-500"
           color="primary"
         >
-          <p className="text-xl">18 years old</p>
+          <p className="text-xl">18 Vuotias</p>
         </Code>
         <Code
           className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-green-500"
           color="success"
         >
-          <p className="text-xl">A Fullstack Developer</p>
+          <p className="text-xl">Ohjelmistokehittäjä</p>
         </Code>
       </div>
 
@@ -180,7 +180,7 @@ export default function App() {
           </PopoverTrigger>
           <PopoverContent>
             <div className="px-3 py-2">
-              <div className="text-small font-bold">Notification</div>
+              <div className="text-small font-bold">Ilmoitukset</div>
               <div className="text-tiny">{popoverMessage}</div>
             </div>
           </PopoverContent>
@@ -193,7 +193,7 @@ export default function App() {
       >
         <div className="mb-12 mt-24">
           <p className="text-3xl font-semibold font-main text-purple-500">
-            Projects
+            Projektit
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-8 md:gap-12">
@@ -223,7 +223,7 @@ export default function App() {
                 </a>
                 <div className="h-24 text-base mb-4">{project.description}</div>
                 <div className="font-main font-bold text-md mb-2">
-                  Tech stack:
+                  Teknologiat:
                 </div>
                 <div className="text-md mb-4">
                   {project.techStack.join(", ")}
@@ -252,7 +252,7 @@ export default function App() {
             ))
           ) : (
             <p className="col-span-full text-center text-gray-500">
-              Loading projects...
+              Ladataan projekteja...
             </p>
           )}
         </div>
@@ -260,17 +260,17 @@ export default function App() {
         <div className="mt-24">
           <div className="flex flex-col">
             <p className="text-3xl font-main font-semibold text-purple-500 text-center mb-8">
-              Skills
+              Taidot
             </p>
           </div>
           <table className="w-full rounded-t-3xl shadow-2xl overflow-hidden items-center justify-center ">
             <thead>
               <tr className="bg-gradient-to-r from-purple-500 to-purple-400 text-white">
                 <th className="text-2xl font-bold py-4 px-6 text-left border-b-4 border-purple-400">
-                  Category
+                  Kategoria
                 </th>
                 <th className="text-2xl font-bold py-4 px-6 text-left border-b-4 border-purple-400">
-                  Technologies
+                  Teknologiat
                 </th>
               </tr>
             </thead>
@@ -312,7 +312,7 @@ export default function App() {
         </div>
         <div className="mt-24">
           <p className="text-3xl font-main font-bold text-purple-400 mb-8 text-center">
-            Contact me
+            Yhteystiedot
           </p>
         </div>
         <div className="flex flex-col" id="contact">

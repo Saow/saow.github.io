@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Carparkpy",
-    "description": "Carparkpy is application to see how many parking spaces are available using machine learning.",
+    "description": "Carparkpy on sovellus, jolla voi tarkastella, kuinka monta parkkipaikkaa on vapaana koneoppimista käyttäen.",
     "image": "./kuva.png",
     "github": "",
     "demo": "https://carparkpy.vercel.app/",
@@ -15,8 +15,8 @@
   },
   {
     "id": 2,
-    "name": "Shelly 3 pro Electricity Switch",
-    "description": "This is a project with my friend. We made script for Shelly 3 Pro electricity exchange switch. It switches relays on and off based on current electricity price using api.",
+    "name": "Shelly 3 pro sähkönvaihtokytkin",
+    "description": "Tämä on projekti ystäväni kanssa. Teimme skriptin Shelly 3 Pro sähkönvaihtokytkintä varten. Se kytkee releet päälle ja pois sen mukaan, mikä on sähkön hintaa käyttämällä API:a.",
     "image": "./shelly.png",
     "github": "https://github.com/Saow/Shelly3Pro-porssisahko",
     "demo": "",
@@ -27,7 +27,7 @@
   {
     "id": 4,
     "name": "Treeni+",
-    "description": "Treeniplus is training PWA application. There is a list of exercises you can do and mark your sets when you are done.",
+    "description": "Treeniplus on treenaus-PWA-sovellus. Siellä on lista harjoituksista, joita voit tehdä, ja voit merkitä sarjat, kun olet tehnyt ne.",
     "image": "./TreeniPlus.png",
     "github": "",
     "demo": "https://treeniplus.vercel.app/",
@@ -38,7 +38,7 @@
   {
     "id": 3,
     "name": "Reppu",
-    "description": "Reppu is a school group project. We made a device register system with database. Credientials: admin:admin",
+    "description": "Reppu oli ryhmä kouluprojekti. Teimme laiterekisteröintijärjestelmän tietokannan kanssa. Käyttäjätunnukset: admin:admin",
     "image": "./reppu.png",
     "github": "",
     "demo": "https://reppu.numsam22.treok.io/",
@@ -50,7 +50,7 @@
   {
     "id": 4,
     "name": "GadolCar",
-    "description": "GadolCar is first my react project. Its a car rental service website.",
+    "description": "GadolCar on ensimmäinen React-projektini. Se on autovuokrauspalvelun verkkosivusto.",
     "image": "./gadolcar.png",
     "github": "https://github.com/Saow/GadolCar",
     "demo": "https://saow.github.io/GadolCar/",
@@ -61,7 +61,7 @@
   {
     "id": 5,
     "name": "WeatherApp",
-    "description": "This is was my first Javascript project.",
+    "description": "Tämä oli ensimmäinen Javascript-projektini.",
     "image": "./weather.png",
     "github": "https://github.com/Saow/WeatherApp",
     "demo": "https://saow.github.io/WeatherApp/",
@@ -72,7 +72,7 @@
   {
     "id": 6,
     "name": "SpaceGame",
-    "description": "SpaceGame is my first C# project made in Unity. It is a simple space shooter game where you control a spaceship and shoot down enemy ships",
+    "description": "SpaceGame on ensimmäinen C#-projektini, joka on tehty Unityllä. Se on yksinkertainen avaruuslaukkauspeli, jossa ohjaat avaruusalusta ja ammut vihollisaluksia alas.",
     "image": "./SpaceGame.png",
     "github": "https://github.com/saow/SpaceGame",
     "demo": "https://saow.github.io/SpaceGame",
