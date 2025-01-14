@@ -24,7 +24,7 @@ export default function App() {
   const [projects, setProjects] = useState([]);
   const [isPopoverVisible, setIsPopoverVisible] = useState(false);
   const [popoverMessage, setPopoverMessage] = useState("");
-  const menuItems = ["Profile", "Projects", "Contact"];
+  const menuItems = ["Profiili", "Projektit","Taidot", "Yhteystiedot"];
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -75,7 +75,7 @@ export default function App() {
           <NavbarItem>
             <Link
               color="foreground"
-              href="#profile"
+              href="#profiili"
               className="hover:text-purple-500 hover:opacity-85"
             >
               Profiili
@@ -84,7 +84,7 @@ export default function App() {
           <NavbarItem>
             <Link
               color="foreground"
-              href="#projects"
+              href="#projektit"
               className="hover:text-purple-500 hover:opacity-85"
             >
               Projektit
@@ -93,7 +93,16 @@ export default function App() {
           <NavbarItem>
             <Link
               color="foreground"
-              href="#contact"
+              href="#taidot"
+              className="hover:text-purple-500 hover:opacity-85"
+            >
+              Taidot
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              color="foreground"
+              href="#yhteystiedot"
               className="hover:text-purple-500 hover:opacity-85"
             >
               Yhteystiedot
@@ -105,14 +114,7 @@ export default function App() {
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                className="w-full items-center flex flex-col p-3 text-xl font-main font-semibold"
-                color={
-                  index === 1
-                    ? "warning"
-                    : index === menuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-                }
+                className="w-full items-center flex flex-col p-3 text-xl font-main font-semibold text-purple-500 hover:text-purple-400"
                 href={`#${item.toLowerCase()}`}
                 size="lg"
                 onClick={() => setIsMenuOpen(false)} // Close the menu after selection
@@ -123,7 +125,7 @@ export default function App() {
           ))}
         </NavbarMenu>
       </Navbar>
-      <div className="h-24" id="profile"></div>
+      <div className="h-24" id="profiili"></div>
       <div className="flex flex-col items-center justify-center mb-12 gap-4 px-4 sm:px-6 md:px-12 lg:px-24">
         <Code
           className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-yellow-500"
@@ -188,7 +190,7 @@ export default function App() {
 
       <div
         className="flex flex-col items-center my-32  sm:px-6 md:px-12 lg:px-24"
-        id="projects"
+        id="projektit"
       >
         <div className="mb-12 mt-24">
           <p className="text-3xl font-semibold font-main text-purple-500">
@@ -262,7 +264,7 @@ export default function App() {
               Taidot
             </p>
           </div>
-          <table className="w-full rounded-t-3xl shadow-2xl overflow-hidden items-center justify-center ">
+          <table className="w-full rounded-t-3xl shadow-2xl overflow-hidden items-center justify-center" id="taidot">
             <thead>
               <tr className="bg-gradient-to-r from-purple-500 to-purple-400 text-white">
                 <th className="text-2xl font-bold py-4 px-6 text-left border-b-4 border-purple-400">
@@ -314,7 +316,7 @@ export default function App() {
             Yhteystiedot
           </p>
         </div>
-        <div className="flex flex-col" id="contact">
+        <div className="flex flex-col" id="yhteystiedot">
           <p className="text-xl font-semibold text-center items-center">
             Samuelnummela06@gmail.com
           </p>
