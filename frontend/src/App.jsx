@@ -293,7 +293,7 @@ export default function App() {
               </tr>
               <tr className="odd:bg-purple-50 even:bg-white hover:bg-purple-200 transition-colors duration-300">
                 <td className="text-lg font-semibold py-4 px-6 border border-purple-500 rounded-l-xl">
-                  Testing
+                  Testaus
                 </td>
                 <td className="text-lg py-4 px-6 border border-purple-500 rounded-r-xl">
                   Cypress, Jest
@@ -301,7 +301,7 @@ export default function App() {
               </tr>
               <tr className="odd:bg-purple-50 even:bg-white hover:bg-purple-200 transition-colors duration-300">
                 <td className="text-lg font-semibold py-4 px-6 border border-purple-500 rounded-l-xl">
-                  Others
+                  Muut
                 </td>
                 <td className="text-lg py-4 px-6 border border-purple-500 rounded-r-xl">
                   Git, Docker, Unity, AWS, Azure, Linux, Windows, MacOS
