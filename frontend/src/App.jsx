@@ -125,8 +125,8 @@ export default function App() {
           ))}
         </NavbarMenu>
       </Navbar>
-      <div className="h-[15rem] items-center flex flex-col " id="profiili">
-        <img src="/kuva.jpeg" alt="" className=" border h-56 w-56 rounded-full object-cover"/>
+      <div className="h-[15rem] items-center flex flex-col pointer-events-none select-none" id="profiili">
+        <img src="/kuva.jpeg" alt="kuva" className="h-56 w-56 rounded-full object-cover pointer-events-none	select-none"/>
       </div>
       <div className="flex flex-col items-center justify-center mb-12 gap-4 px-4 sm:px-6 md:px-12 lg:px-24">
         <Code
