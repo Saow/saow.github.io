@@ -125,7 +125,9 @@ export default function App() {
           ))}
         </NavbarMenu>
       </Navbar>
-      <div className="h-24" id="profiili"></div>
+      <div className="h-[15rem] items-center flex flex-col " id="profiili">
+        <img src="/kuva.jpeg" alt="" className=" border h-56 w-56 rounded-full object-cover"/>
+      </div>
       <div className="flex flex-col items-center justify-center mb-12 gap-4 px-4 sm:px-6 md:px-12 lg:px-24">
         <Code
           className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-yellow-500"
