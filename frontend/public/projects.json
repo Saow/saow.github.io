@@ -27,7 +27,7 @@
   {
     "id": 4,
     "name": "Treeni+",
-    "description": "Treeniplus on treenaus-PWA-sovellus. Siellä on lista harjoituksista, joita voit tehdä, ja voit merkitä sarjat, kun olet tehnyt ne.",
+    "description": "Treeniplus on kuntosali treenaus-PWA-sovellus. Siellä on lista erilaisista kuntosali harjoituksista, joita voit tehdä, ja voit merkitä sarjat, kun olet tehnyt ne.",
     "image": "./TreeniPlus.png",
     "github": "",
     "demo": "https://treeniplus.vercel.app/",
@@ -61,7 +61,7 @@
   {
     "id": 5,
     "name": "WeatherApp",
-    "description": "Tämä oli ensimmäinen Javascript-projektini.",
+    "description": "WeatherApp on sääsovellus yksinkertaisella käyttöliittymällä.",
     "image": "./weather.png",
     "github": "https://github.com/Saow/WeatherApp",
     "demo": "https://saow.github.io/WeatherApp/",
@@ -72,7 +72,7 @@
   {
     "id": 6,
     "name": "SpaceGame",
-    "description": "SpaceGame on ensimmäinen C#-projektini, joka on tehty Unityllä. Se on yksinkertainen avaruuslaukkauspeli, jossa ohjaat avaruusalusta ja ammut vihollisaluksia alas.",
+    "description": "SpaceGame on ensimmäinen C#-projektini, joka on tehty Unityllä. Se on yksinkertainen avaruusalusta peli, jossa ohjaat avaruusalustaa ja ammut vihollisaluksia alas.",
     "image": "./SpaceGame.png",
     "github": "https://github.com/saow/SpaceGame",
     "demo": "https://saow.github.io/SpaceGame",
