@@ -139,12 +139,11 @@ export default function App() {
         >
           <p className="text-xl">Samuel Nummela</p>
         </Code>
-        <Code
+        {/* <Code
           className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-blue-500"
           color="primary"
         >
-          <p className="text-xl">18 Vuotias</p>
-        </Code>
+        </Code> */}
         <Code
           className="p-4 border-3 border-transparent hover:opacity-85 transition-all duration-300 ease-in-out hover:border-green-500"
           color="success"
