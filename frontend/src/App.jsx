@@ -155,7 +155,7 @@ export default function App() {
           <p className="text-xl">Ohjelmistokehittäjä</p>
         </Code>
         <div className="">
-          <p className="text-lg w-[60rem] text-center">
+          <p className="text-lg md:w-[60rem] text-center">
             Olen kolmannen vuoden <b>Ohjelmistokehittäjäopiskelija</b>, Olen erityisesti kiinnostunut Web-kehityksestä sekä sulautettujen järjestelmien ohjelmoinnista. Olen tehnyt useita projekteja, joista osa on nähtävissä ala puolella.
           </p>
         </div>
