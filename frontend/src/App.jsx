@@ -152,6 +152,11 @@ export default function App() {
         >
           <p className="text-xl">Ohjelmistokehittäjä</p>
         </Code>
+        <div className="">
+          <p className="text-lg w-[60rem] text-center">
+            Olen kolmannen vuoden <b>Ohjelmistokehittäjäopiskelija</b>, Olen erityisesti kiinnostunut Web-kehityksestä sekä sulautettujen järjestelmien ohjelmoinnista. Olen tehnyt useita projekteja, joista osa on nähtävissä alla puolella.
+          </p>
+        </div>
       </div>
 
       <div className="flex items-center justify-center flex-wrap gap-8 px-4 sm:px-6 md:px-12 lg:px-24">
