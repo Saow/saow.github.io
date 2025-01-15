@@ -53,7 +53,7 @@
     "description": "GadolCar on ensimmäinen React-projektini. Se on autovuokrauspalvelu.",
     "image": "./gadolcar.png",
     "github": "https://github.com/Saow/GadolCar",
-    "demo": "https://saow.github.io/GadolCar/",
+    "demo": "https://gadolcar.vercel.app",
     "techStack": [
       "React"
     ]
