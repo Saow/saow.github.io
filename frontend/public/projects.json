@@ -85,7 +85,7 @@
   {
     "id": 7,
     "name": "Ravintola Nettisivut",
-    "description": "Tein asiakkaalle nettisivut hänen toiveideinsa mukaan.",
+    "description": "Tein asiakkaalle nettisivut hänen toiveidensa mukaan.",
     "image": "./ravintola.png",
     "demo": "https://malakairavintola.fi",
     "techStack": [
