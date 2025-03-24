@@ -65,7 +65,9 @@
     "github": "https://github.com/Saow/WeatherApp",
     "demo": "https://saow.github.io/WeatherApp/",
     "techStack": [
-      "Javascript", "HTML", "CSS"
+      "Javascript",
+      "HTML",
+      "CSS"
     ]
   },
   {
@@ -81,13 +83,14 @@
     ]
   },
   {
-  "id": 7,
-  "name": "Ravintola Nettisivut",
-  "description": "Tein asiakkaalle nettisivut",
-  "image": "",
-  "demo": "https://malakairavintola.fi",
-  "techStack": [
-    "HTML",
-    "CSS"
-  ]
-}
+    "id": 7,
+    "name": "Ravintola Nettisivut",
+    "description": "Tein asiakkaalle nettisivut",
+    "image": "./ravintola.png",
+    "demo": "https://malakairavintola.fi",
+    "techStack": [
+      "HTML",
+      "CSS"
+    ]
+  }
+]
