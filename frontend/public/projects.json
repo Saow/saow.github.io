@@ -38,7 +38,7 @@
   {
     "id": 3,
     "name": "Reppu",
-    "description": "Reppu oli ryhmä kouluprojekti. Teimme laiterekisteröintijärjestelmän tietokannan kanssa. Käyttäjätunnukset: admin:admin",
+    "description": "Reppu oli ryhmä kouluprojekti. Teimme laiterekisteröintijärjestelmän tietokannan kanssa. Käyttäjätunnukset: admin:admin rekisteröintikoodi on 1234",
     "image": "./reppu.png",
     "github": "",
     "demo": "https://reppu.numsam22.treok.io/",
