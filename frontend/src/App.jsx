@@ -212,7 +212,7 @@ function App() {
                       <h3 className="font-semibold text-lg mb-2">
                         {project.name}
                       </h3>
-                      <p className="text-sm text-gray-500 mb-4 line-clamp-3">
+                      <p className="text-sm h-16 text-gray-500 mb-4 line-clamp-3">
                         {project.description}
                       </p>
                       <div className="flex flex-wrap gap-2 mb-4">
