@@ -261,7 +261,6 @@ function App() {
         <section id="taidot" className="py-12">
           <div className="space-y-6">
             <h2 className="text-2xl font-bold tracking-tight">Taidot</h2>
-
             <div className="w-full">
               <div className="flex border-b">
                 <button

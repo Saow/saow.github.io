@@ -4,7 +4,7 @@
     "name": "Carparkpy",
     "description": "Carparkpy on sovellus, jolla voi tarkastella, kuinka monta parkkipaikkaa on vapaana koneoppimista käyttäen.",
     "image": "./kuva.png",
-    "github": "https://github.com/Arskakoo/CarparkPy-app",
+    "github": "https://github.com/Saow/carparkpy-app",
     "demo": "https://carparkpy.vercel.app/",
     "techStack": [
       "Python",
