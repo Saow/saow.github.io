@@ -15,8 +15,8 @@
   },
   {
     "id": 2,
-    "name": "Shelly 3 pro sähkönvaihtokytkin",
-    "description": "Tämä on Shelly 3 Pro sähkönvaihtokytkintä varten oleva scripti. Se kytkee releet päälle ja pois sähkönhinnan mukaan käyttämällä Spot-hinta.fi rajapintaa.",
+    "name": "Shelly 3 pro - releiden ohjaus sähkön hinnan mukaan",
+    "description": "Tämä on Shelly 3 Pro -laitteelle tarkoitettu skripti, joka ohjaa releitä päälle ja pois Spot-hinta.fi-rajapinnan tarjoaman sähkön hinnan perusteella.",
     "image": "./shelly.png",
     "github": "https://github.com/Saow/Shelly3Pro-porssisahko",
     "demo": "",

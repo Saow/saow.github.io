@@ -139,10 +139,9 @@ function App() {
             </div>
 
             <p className="max-w-2xl text-center text-gray-500">
-              Olen kolmannen vuoden{" "}
-              <span className="font-medium">Ohjelmistokehittäjäopiskelija</span>
-              , erityisesti kiinnostunut Web-kehityksestä. Olen tehnyt useita
-              projekteja, joista osa on nähtävissä alapuolella.
+              Olen <span className="font-medium">ohjelmistokehittäjä</span>, ja
+              intohimoni on web-kehitys. Olen toteuttanut useita projekteja,
+              joista osa on esitelty alla.
             </p>
 
             <div className="flex items-center gap-4">
