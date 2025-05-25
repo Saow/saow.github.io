@@ -120,7 +120,7 @@ function App() {
       </header>
 
       <main className="container mx-auto px-4 py-10 md:py-16">
-        {/* Profile Section */}
+        {/* Profiili Section */}
         <section id="profiili" className="py-12 space-y-8">
           <div className="flex flex-col items-center space-y-6">
             <div className="relative h-40 w-40 overflow-hidden rounded-full border-4 border-white bg-gray-100">
@@ -139,9 +139,8 @@ function App() {
             </div>
 
             <p className="max-w-2xl text-center text-gray-500">
-              Olen <span className="font-medium">ohjelmistokehittäjä</span>, ja
-              intohimoni on web-kehitys. Olen toteuttanut useita projekteja,
-              joista osa on esitelty alla.
+              Tykkään uusien teknologioiden oppimisesta ja käytännön projektien
+              toteuttamisesta – löydät esimerkkejä töistäni alta.
             </p>
 
             <div className="flex items-center gap-4">
@@ -182,7 +181,6 @@ function App() {
             </div>
           </div>
         </section>
-
         {/* Projects Section */}
         <section id="projektit" className="py-12">
           <div className="space-y-6">
@@ -255,7 +253,6 @@ function App() {
             )}
           </div>
         </section>
-
         {/* Skills Section */}
         <section id="taidot" className="py-12">
           <div className="space-y-6">
@@ -381,7 +378,6 @@ function App() {
             </div>
           </div>
         </section>
-
         {/* Contact Section */}
         <section id="yhteystiedot" className="py-12">
           <div className="space-y-6">
